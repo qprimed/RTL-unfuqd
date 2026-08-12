@@ -79,11 +79,7 @@ export class CLNEffects implements OnDestroy {
           map((info) => {
             this.logger.info(info);
             this.CLN_VERISON = info.version || '';
-            if (info.chains && info.chains.length && info.chains[0] &&
-              (typeof info.chains[0] === 'object' && info.chains[0].hasOwnProperty('chain') && info?.chains[0].chain &&
-                (info?.chains[0].chain.toLowerCase().indexOf('bitcoin') < 0 && info?.chains[0].chain.toLowerCase().indexOf('liquid') < 0)
-              )
-            ) {
+            if (false) {
               this.store.dispatch(updateCLNAPICallStatus({ payload: { action: 'FetchInfo', status: APICallStatusEnum.COMPLETED } }));
               this.store.dispatch(closeSpinner({ payload: UI_MESSAGES.GET_NODE_INFO }));
               this.store.dispatch(closeAllDialogs());

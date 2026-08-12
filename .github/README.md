@@ -1,4 +1,9 @@
 ## Ride The Lightning (RTL)
+
+A fork of Ride the Lightning with the "Bitcoin Only" checks disabled.
+
+Toxic Bitcoin maximalism is a serious disease among some developers and this fork attempts to aleviate some of the wider cryptocurrency community pain caused by the infected. Please use the branches suffixed with "-unfuqd" to innoculate yourself and follow the usual installation instructions. Conflicting dependencies may be worked around with "npm install --force --only=prod"
+
 ![](./screenshots/RTL-LND-Dashboard.png)
 
 <a href="https://snyk.io/test/github/Ride-The-Lightning/RTL"><img src="https://snyk.io/test/github/Ride-The-Lightning/RTL/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/Ride-The-Lightning/RTL" style="max-width:100%;"></a>
